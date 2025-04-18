@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Rangers Team Directory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+    }
+    nav {
+      background: #ff0000;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      background: url('https://wallpapercave.com/wp/wp1876014.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 5px #ff0000;
+    }
+    header button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    header button:hover {
+      background: #ff5555;
+    }
+    .teams {
+      padding: 50px 20px;
+      background: #121212;
+    }
+    .teams h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1f1f1f;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background: #2a2a2a;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      color: #ffcc00;
+    }
+    .card p {
+      font-size: 0.9rem;
+    }
+    .extra-section {
+      padding: 40px 20px;
+      background: #181818;
+    }
+    .extra-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    form button {
+      padding: 10px;
+      background: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #form-message {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #00ff00;
+    }
+    iframe {
+      display: block;
+      margin: 30px auto;
+      border: 5px solid #ff0000;
+      border-radius: 10px;
+    }
+    .feedback-button {
+      display: block;
+      width: 200px;
+      padding: 10px;
+      background-color: #ff0000;
+      color: #fff;
+      text-align: center;
+      margin: 20px auto;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .feedback-button:hover {
+      background-color: #ff5555;
+    }
+    table {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+      background: #1c1c1c;
+    }
+    table, th, td {
+      border: 1px solid #444;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #ff0000;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #0b0b0b;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#teams">Teams</a>
+    <a href="#contact">Contact</a>
+    <a href="#videos">Videos</a>
+  </nav>
+
+  <header>
+    <h1>⚡ Power Rangers Universe ⚡</h1>
+    <button onclick="scrollToTeams()">Meet the Rangers</button>
+  </header>
+
+  <section class="teams" id="teams">
+    <h2>Ranger Teams</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://wallpapercave.com/wp/wp1876017.jpg" alt="Mighty Morphin Rangers">
+        <h3>Mighty Morphin</h3>
+        <p>The original heroes who started it all with Dino-powered Zords and classic style.</p>
+      </div>
+      <div class="card">
+        <img src="https://wallpapercave.com/wp/wp2026175.jpg" alt="Power Rangers Zeo">
+        <h3>Zeo Rangers</h3>
+        <p>Transformed by the Zeo Crystals, stronger and more powerful than ever before.</p>
+      </div>
+      <div class="card">
+        <img src="https://wallpapercave.com/wp/wp1876007.jpg" alt="SPD Rangers">
+        <h3>SPD Rangers</h3>
+        <p>Futuristic defenders keeping the peace and battling alien threats across galaxies.</p>
+      </div>
+      <div class="card">
+        <img src="https://wallpapercave.com/wp/wp1875999.jpg" alt="Dino Thunder">
+        <h3>Dino Thunder</h3>
+        <p>A powerful comeback with dinosaur spirits and one of the best Red Rangers ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="extra-section" id="contact">
+    <h2>Contact the Rangers</h2>
+    <form id="contactForm" novalidate>
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+      <div id="form-message"></div>
+    </form>
+
+    <h2 id="videos">Watch Morphin' Time</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKE2DC7Xzog" title="Mighty Morphin Power Rangers: Once & Always | Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHudImG9NU6fdqtdQfebV9dVIFKPQLgUYHNIZKWxd0NxP4HQ/viewform?usp=dialog" class="feedback-button">Give Feedback</a>
+   <h2>Ranger Stats</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Leader</th>
+          <th>Power Source</th>
+          <th>Main Zord</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mighty Morphin</td>
+          <td>Jason / Tommy</td>
+          <td>Dino Coins</td>
+          <td>Megazord</td>
+        </tr>
+        <tr>
+          <td>Zeo Rangers</td>
+          <td>Tommy</td>
+          <td>Zeo Crystal</td>
+          <td>Zeo Megazord</td>
+        </tr>
+        <tr>
+          <td>SPD</td>
+          <td>Jack</td>
+          <td>SPD Morphers</td>
+          <td>Delta Squad Megazord</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Power Rangers Universe. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+     function scrollToTeams() {
+      document.getElementById('teams').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const messageBox = document.getElementById('form-message');
+
+      if (!name || !email || !message) {
+        messageBox.style.color = 'red';
+        messageBox.textContent = 'Please fill in all fields.';
+        return;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        messageBox.style.color = 'red';
+        messageBox.textContent = 'Please enter a valid email address.';
+        return;
+      }
+
+      messageBox.style.color = '#00ff00';
+      messageBox.textContent = 'Thank you, ' + name + '! Your message has been sent.';
+
+      // Show alert after successful submission
+      alert('Thank you, ' + name + '! Your message has been sent successfully.');
+
+      // Scroll to Ranger Teams after submission
+      scrollToTeams();
+
+      // Optionally reset the form
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+</body>
+</html>
