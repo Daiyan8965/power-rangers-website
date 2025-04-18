@@ -5,6 +5,7 @@ This is a simple website dedicated to the Power Rangers, created as a project to
 ## Technologies Used
 - HTML5
 - CSS3 (internal styling)
+- Java Script 
 
 ## Project Status
 Currently under development. More features and pages will be added soon.
